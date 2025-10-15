@@ -1,0 +1,210 @@
+SFWeb Website Generation
+
+Goal:
+Create a professional, production-ready 5-page website for SFWeb, a Limerick-based Irish web design service offering affordable websites to local businesses.
+Focus on a dark theme with blue/green accents, a clean layout, and strong calls-to-action for local Irish clients.
+
+Overall Requirements
+
+Business name: SFWeb
+
+Location: Limerick, Ireland
+
+Type: Web design and development service
+
+Objective: Convert visitors into leads for either custom websites or template setup websites.
+
+Tone: Local, modern, trustworthy, affordable.
+
+No tech-stack assumptions; use best practices for modern, responsive web design.
+
+Design & Style
+
+Theme: Dark background aesthetic
+
+Accent Colors: Blue and green (buttons, links, hover effects, highlights)
+
+Typography: Modern, readable, professional (bold headers, clean body text)
+
+Layout: 5-page structure with consistent header/footer
+
+Header/Nav: Sticky top navigation with logo (or text logo), Home, Services, Pricing, About, Contact, and a “Get a Quote” button
+
+Footer: Dark with light text; include contact info, quick links, and “Based in Limerick, Ireland” text
+
+Custom Scrollbar: Blue/green gradient, rounded corners
+
+Animations: Subtle fade or slide effects for section transitions and hover states
+
+Responsive: Fully functional on desktop, tablet, and mobile
+
+Site Structure (5 Pages)
+1. Home
+
+Purpose: Introduce SFWeb and quickly communicate what’s offered.
+
+Sections:
+
+Hero Section:
+
+Headline: “Modern Websites for Local Irish Businesses.”
+
+Sub-text: “Affordable, fast, and locally built in Limerick.”
+
+CTA button: “Get a Quote” (scrolls to Contact page)
+
+Features / Benefits:
+Icons with short text: Fast turnaround, mobile-friendly, affordable, SEO-ready, local support.
+
+Template vs Custom Section:
+Two cards comparing Template Setup (€150–€200) vs Custom Website (€300+).
+
+Showcase / Examples:
+Placeholder images or cards for future portfolio templates.
+
+Local Section:
+Text or visual element reinforcing “Proudly based in Limerick, working with clients across Ireland.”
+
+Final CTA:
+“Start your project today” → button links to Contact.
+
+2. Services
+
+Headline: “What We Offer”
+
+Sections:
+
+Website Templates
+
+Description: Pre-made templates for cafés, tradespeople, gyms, salons, etc.
+
+Process: Choose a template → Provide content → SFWeb sets it up.
+
+Price: €150–€200 (includes setup + deployment).
+
+Note: Templates can be upgraded later.
+
+Custom Websites
+
+Description: Fully bespoke sites for unique branding or functionality.
+
+Price: €300 (intro rate, will increase as portfolio grows).
+
+3-step process: Chat → Build → Launch.
+
+Maintenance & Hosting
+
+Optional monthly maintenance or support.
+
+Help with domain setup and hosting.
+
+3. Pricing
+
+Headline: “Simple, Transparent Pricing”
+
+Pricing Table:
+
+Template Setup
+
+Price: €150–€200
+
+Includes: 5-page site, setup, content insertion, contact form, deployment help.
+
+Custom Website
+
+Price: €300 (intro offer)
+
+Includes: bespoke design, feedback loop, launch support, SEO setup.
+
+(Optional) Maintenance Plan
+
+From €25/month (future feature).
+
+CTA: “Contact me to start your project today” (links to Contact).
+
+4. About
+
+Headline: “About SFWeb”
+
+Sections:
+
+Who I Am:
+
+“Hi, I’m Sean — an IT graduate based in Limerick. I create clean, modern websites for local Irish businesses.”
+
+Mission Statement:
+
+“Helping Irish businesses grow online without breaking the bank.”
+
+Process Overview:
+
+Chat
+
+Design
+
+Launch
+
+Local Emphasis:
+Mention that SFWeb is Limerick-based and offers friendly, personal service.
+
+5. Contact
+
+Headline: “Get in Touch”
+
+Sections:
+
+Contact Form Fields: Name, Email, Business Name, Message.
+
+Confirmation Message: “Thanks! I’ll reply within 24 hours.”
+
+Alternative Contact Info: Email + optional phone number + social links.
+
+Local Element: Text like “Based in Limerick, Ireland” or small map graphic.
+
+CTA Text:
+
+“Whether you’re ready to launch or just curious about pricing — let’s chat about your project.”
+
+Functionality
+
+Responsive across all devices.
+
+Smooth scrolling between sections.
+
+Contact form (can submit via any supported backend or service).
+
+Basic SEO setup (titles, meta descriptions, social preview).
+
+Custom scrollbar matching brand colors.
+
+Fast load performance.
+
+Accessible (readable contrast, alt text for images).
+
+Footer year auto-updates.
+
+Future Expansion (Phase 2)
+
+Add Portfolio / Past Clients page once projects are completed.
+
+Add Testimonials or Reviews section.
+
+Add Maintenance Plan subscription info.
+
+Optional Blog for SEO and updates.
+
+Optional Client Portal / Dashboard in later phase.
+
+Success Criteria
+
+SFWeb appears professional, local, and affordable.
+
+Clear visual distinction between template and custom offerings.
+
+Easy to navigate and contact from any page.
+
+Blue/green accents and dark theme consistent site-wide.
+
+Designed to convert visitors into inquiries via the Contact form.
+
+Site feels proudly Irish, with Limerick identity subtly highlighted.
