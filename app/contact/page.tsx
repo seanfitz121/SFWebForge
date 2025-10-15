@@ -40,7 +40,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-400 max-w-3xl mx-auto"
           >
-            Whether you're ready to launch or just curious about pricing — let's chat about your project
+            Whether you&apos;re ready to launch or just curious about pricing — let&apos;s chat about your project
           </motion.p>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function Contact() {
                   animate={{ opacity: 1, y: 0 }}
                   className="bg-primary-green/10 border border-primary-green text-primary-green p-4 rounded-lg mb-6"
                 >
-                  <strong>Thanks for reaching out!</strong> I'll reply within 24 hours.
+                  <strong>Thanks for reaching out!</strong> I&apos;ll reply within 24 hours.
                 </motion.div>
               )}
 
@@ -233,7 +233,7 @@ export default function Contact() {
                 </h3>
                 <p className="text-gray-400">
                   SFWeb is a local Irish business based in Limerick, working with businesses 
-                  throughout Ireland. When you work with me, you're supporting local while 
+                  throughout Ireland. When you work with me, you&apos;re supporting local while 
                   getting professional web design services.
                 </p>
               </div>
@@ -256,23 +256,23 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div>
                 <div className="text-4xl mb-3">📧</div>
-                <h3 className="text-xl font-semibold mb-2">1. I'll Reply</h3>
+                <h3 className="text-xl font-semibold mb-2">1. I&apos;ll Reply</h3>
                 <p className="text-gray-400">
-                  Within 24 hours, you'll get a personal response from me
+                  Within 24 hours, you&apos;ll get a personal response from me
                 </p>
               </div>
               <div>
                 <div className="text-4xl mb-3">💬</div>
-                <h3 className="text-xl font-semibold mb-2">2. We'll Chat</h3>
+                <h3 className="text-xl font-semibold mb-2">2. We&apos;ll Chat</h3>
                 <p className="text-gray-400">
-                  We'll discuss your needs and I'll provide recommendations
+                  We&apos;ll discuss your needs and I&apos;ll provide recommendations
                 </p>
               </div>
               <div>
                 <div className="text-4xl mb-3">🚀</div>
                 <h3 className="text-xl font-semibold mb-2">3. Get Started</h3>
                 <p className="text-gray-400">
-                  Once you're happy, we'll kick off your project
+                  Once you&apos;re happy, we&apos;ll kick off your project
                 </p>
               </div>
             </div>
