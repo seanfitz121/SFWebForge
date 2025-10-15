@@ -13,7 +13,7 @@ SFWeb is a professional, production-ready 5-page Next.js website for a Limerick-
 - **Fully responsive**: Optimized for desktop, tablet, and mobile with enhanced mobile navigation
 - **SEO-optimized**: Meta tags, Open Graph URLs, JSON-LD structured data, sitemap, robots.txt
 - **Modern animations**: Framer Motion for smooth transitions, mobile menu animations, hover effects
-- **Contact form**: Validated form with React Hook Form and confirmation messaging
+- **Contact form**: Validated form with Resend email integration (sends to sean@sfweb.ie)
 - **Irish business focus**: Emphasizes Limerick location and local service
 
 ## Tech Stack
@@ -22,17 +22,21 @@ SFWeb is a professional, production-ready 5-page Next.js website for a Limerick-
 - **Styling**: Tailwind CSS v4 with custom theme
 - **Animations**: Framer Motion
 - **Form Handling**: React Hook Form
+- **Email**: Resend (via Replit connector integration)
 - **SEO**: next-seo, custom sitemap and robots.txt
 
 ## Architecture
 ```
 ├── app/
+│   ├── api/
+│   │   └── contact/
+│   │       └── route.ts    # Contact form API endpoint with Resend
 │   ├── layout.tsx          # Root layout with metadata
 │   ├── page.tsx            # Home page
 │   ├── services/page.tsx   # Services page
 │   ├── pricing/page.tsx    # Pricing page
 │   ├── about/page.tsx      # About page
-│   ├── contact/page.tsx    # Contact page
+│   ├── contact/page.tsx    # Contact page with email form
 │   ├── globals.css         # Global styles with Tailwind v4
 │   └── sitemap.ts          # SEO sitemap
 ├── components/
@@ -57,6 +61,10 @@ SFWeb is a professional, production-ready 5-page Next.js website for a Limerick-
 - ✅ Fixed SEO: removed empty telephone field, added page-specific OG URLs, proper price formatting
 - ✅ Configured custom blue/green gradient scrollbar
 - ✅ Set up workflow on port 5000
+- ✅ Integrated Resend email service via Replit connector
+- ✅ Created API route for contact form submissions
+- ✅ Updated contact form with loading states and error handling
+- ✅ Email notifications now sent to sean@sfweb.ie
 
 ## Design Specifications
 - **Color Palette**:
