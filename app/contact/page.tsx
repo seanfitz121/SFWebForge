@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { Resend } from 'resend';
 
 type FormData = {
   name: string;
@@ -12,9 +11,11 @@ type FormData = {
   message: string;
 };
 
-
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  
   const {
     register,
     handleSubmit,
@@ -22,11 +23,36 @@ export default function Contact() {
     reset,
   } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
-    console.log("Form submitted:", data);
-    setIsSubmitted(true);
-    reset();
-    setTimeout(() => setIsSubmitted(false), 5000);
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message');
+      }
+
+      setIsSubmitted(true);
+      reset();
+      setTimeout(() => setIsSubmitted(false), 5000);
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitError(
+        error instanceof Error ? error.message : 'Failed to send message. Please try again.'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -75,6 +101,16 @@ export default function Contact() {
                 >
                   <strong>Thanks for reaching out!</strong> I'll reply within 24
                   hours.
+                </motion.div>
+              )}
+
+              {submitError && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-red-500/10 border border-red-500 text-red-400 p-4 rounded-lg mb-6"
+                >
+                  <strong>Error:</strong> {submitError}
                 </motion.div>
               )}
 
@@ -166,8 +202,12 @@ export default function Contact() {
                   )}
                 </div>
 
-                <button type="submit" className="btn-primary w-full text-lg">
-                  Send Message
+                <button 
+                  type="submit" 
+                  className="btn-primary w-full text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </motion.div>
