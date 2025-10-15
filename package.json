@@ -5,8 +5,6 @@
   "scripts": {
     "dev": "next dev -p 5000",
     "build": "next build",
-    "export": "next export",
-    "build:static": "next build && next export",
     "start": "next start -p 5000",
     "lint": "next lint"
   },
@@ -14,10 +12,6 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^15.5.5"
-  },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.14",
     "@types/node": "^24.7.2",

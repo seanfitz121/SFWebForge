@@ -47,7 +47,7 @@ export default function Pricing() {
               </div>
               
               <div className="border-t border-dark-border pt-6 mb-6">
-                <h3 className="text-lg font-semibold mb-4">What&apos;s Included:</h3>
+                <h3 className="text-lg font-semibold mb-4">What's Included:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-primary-green mr-3 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -260,7 +260,7 @@ export default function Pricing() {
               viewport={{ once: true }}
               className="card"
             >
-              <h3 className="text-lg font-semibold mb-2">What&apos;s the difference between template and custom?</h3>
+              <h3 className="text-lg font-semibold mb-2">What's the difference between template and custom?</h3>
               <p className="text-gray-400">
                 Templates use pre-designed layouts that are customized with your content and branding. Custom websites are built from scratch specifically for your business with unique designs and features.
               </p>
@@ -288,7 +288,7 @@ export default function Pricing() {
             >
               <h3 className="text-lg font-semibold mb-2">Do I need to pay for hosting separately?</h3>
               <p className="text-gray-400">
-                Yes, hosting is separate. I&apos;ll help you choose affordable hosting options and assist with setup. Many quality hosts start from €5-10 per month.
+                Yes, hosting is separate. I'll help you choose affordable hosting options and assist with setup. Many quality hosts start from €5-10 per month.
               </p>
             </motion.div>
 
@@ -301,7 +301,7 @@ export default function Pricing() {
             >
               <h3 className="text-lg font-semibold mb-2">Can I update the website myself?</h3>
               <p className="text-gray-400">
-                Yes! I&apos;ll provide guidance on how to make simple updates. For more complex changes, the optional maintenance plan is available.
+                Yes! I'll provide guidance on how to make simple updates. For more complex changes, the optional maintenance plan is available.
               </p>
             </motion.div>
 
@@ -314,7 +314,7 @@ export default function Pricing() {
             >
               <h3 className="text-lg font-semibold mb-2">Can I upgrade from template to custom later?</h3>
               <p className="text-gray-400">
-                Absolutely! Start with a template to get online quickly, then upgrade to a custom design as your business grows. We&apos;ll credit your initial investment.
+                Absolutely! Start with a template to get online quickly, then upgrade to a custom design as your business grows. We'll credit your initial investment.
               </p>
             </motion.div>
           </div>

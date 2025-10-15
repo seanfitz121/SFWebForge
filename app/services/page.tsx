@@ -268,7 +268,7 @@ export default function Services() {
               <div className="card">
                 <h3 className="text-xl font-semibold mb-4">Domain & Hosting Help</h3>
                 <p className="text-gray-400 mb-4">
-                  Need help with domain registration or hosting setup? We&apos;ll guide you through the entire process.
+                  Need help with domain registration or hosting setup? We'll guide you through the entire process.
                 </p>
                 <ul className="space-y-2 text-gray-400">
                   <li className="flex items-start">
