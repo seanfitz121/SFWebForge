@@ -1,16 +1,40 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const features = [
-    { icon: '⚡', title: 'Fast Turnaround', description: 'Get your website up and running quickly' },
-    { icon: '📱', title: 'Mobile-Friendly', description: 'Perfectly responsive on all devices' },
-    { icon: '💰', title: 'Affordable', description: 'Quality websites that fit your budget' },
-    { icon: '🔍', title: 'SEO-Ready', description: 'Built to rank well on search engines' },
-    { icon: '🇮🇪', title: 'Local Support', description: 'Personal service from Limerick' },
-    { icon: '⚙️', title: 'Easy Updates', description: 'Simple content management' },
+    {
+      icon: "⚡",
+      title: "Fast Turnaround",
+      description: "Get your website up and running quickly",
+    },
+    {
+      icon: "📱",
+      title: "Mobile-Friendly",
+      description: "Perfectly responsive on all devices",
+    },
+    {
+      icon: "💰",
+      title: "Affordable",
+      description: "Quality websites that fit your budget",
+    },
+    {
+      icon: "🔍",
+      title: "SEO-Ready",
+      description: "Built to rank well on search engines",
+    },
+    {
+      icon: "☘️",
+      title: "Local Support",
+      description: "Personal service from Limerick",
+    },
+    {
+      icon: "⚙️",
+      title: "Easy Updates",
+      description: "Simple content management",
+    },
   ];
 
   return (
@@ -23,7 +47,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-5xl md:text-6xl font-bold mb-6"
           >
-            Modern Websites for{' '}
+            Modern Websites for{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Local Irish Businesses
             </span>
@@ -78,7 +102,8 @@ export default function Home() {
             Choose Your <span className="text-primary-blue">Solution</span>
           </h2>
           <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-            Whether you need a quick setup or a fully custom design, we have the right option for you
+            Whether you need a quick setup or a fully custom design, we have the
+            right option for you
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <motion.div
@@ -88,7 +113,9 @@ export default function Home() {
               viewport={{ once: true }}
               className="card hover:shadow-xl hover:shadow-primary-green/20"
             >
-              <div className="text-primary-green text-xl font-bold mb-2">Template Setup</div>
+              <div className="text-primary-green text-xl font-bold mb-2">
+                Template Setup
+              </div>
               <div className="text-4xl font-bold mb-4">€150-€200</div>
               <p className="text-gray-400 mb-6">
                 Perfect for getting online quickly with professional templates
@@ -115,7 +142,10 @@ export default function Home() {
                   <span>Can upgrade later</span>
                 </li>
               </ul>
-              <Link href="/services" className="btn-secondary w-full block text-center">
+              <Link
+                href="/services"
+                className="btn-secondary w-full block text-center"
+              >
                 Learn More
               </Link>
             </motion.div>
@@ -127,10 +157,13 @@ export default function Home() {
               viewport={{ once: true }}
               className="card hover:shadow-xl hover:shadow-primary-blue/20 border-2 border-primary-blue"
             >
-              <div className="text-primary-blue text-xl font-bold mb-2">Custom Website</div>
+              <div className="text-primary-blue text-xl font-bold mb-2">
+                Custom Website
+              </div>
               <div className="text-4xl font-bold mb-4">€300+</div>
               <p className="text-gray-400 mb-6">
-                Fully bespoke design tailored to your unique brand
+                Fully bespoke design tailored to your unique brand, more
+                customisation
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
@@ -154,7 +187,10 @@ export default function Home() {
                   <span>Launch support included</span>
                 </li>
               </ul>
-              <Link href="/services" className="btn-primary w-full block text-center">
+              <Link
+                href="/services"
+                className="btn-primary w-full block text-center"
+              >
                 Get Started
               </Link>
             </motion.div>
@@ -174,10 +210,11 @@ export default function Home() {
               Proudly <span className="text-primary-green">Limerick-Based</span>
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-              Working with clients across Ireland to help local businesses thrive online. 
-              Get the personal touch of a local developer who understands your community.
+              Working with clients across Ireland to help local businesses
+              thrive online. Get the personal touch of a local developer who
+              understands your community.
             </p>
-            <div className="text-5xl mb-6">🇮🇪</div>
+            <div className="text-5xl mb-6">☘️</div>
           </motion.div>
         </div>
       </section>
@@ -194,7 +231,8 @@ export default function Home() {
               Ready to Get Started?
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              Start your project today and get your business online with a professional website
+              Start your project today and get your business online with a
+              professional website
             </p>
             <Link href="/contact" className="btn-primary text-lg">
               Contact Me Today

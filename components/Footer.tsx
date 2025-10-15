@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,27 +25,42 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-primary-blue transition-colors">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-primary-blue transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-primary-blue transition-colors">
+                <Link
+                  href="/services"
+                  className="text-gray-400 hover:text-primary-blue transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-gray-400 hover:text-primary-blue transition-colors">
+                <Link
+                  href="/pricing"
+                  className="text-gray-400 hover:text-primary-blue transition-colors"
+                >
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary-blue transition-colors">
+                <Link
+                  href="/about"
+                  className="text-gray-400 hover:text-primary-blue transition-colors"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-primary-blue transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-primary-blue transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -57,8 +72,11 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>Limerick, Ireland</li>
               <li>
-                <a href="mailto:hello@sfweb.ie" className="hover:text-primary-blue transition-colors">
-                  hello@sfweb.ie
+                <a
+                  href="mailto:hello@sfweb.ie"
+                  className="hover:text-primary-blue transition-colors"
+                >
+                  sean@sfweb.ie
                 </a>
               </li>
             </ul>

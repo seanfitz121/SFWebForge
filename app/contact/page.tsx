@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useForm } from 'react-hook-form';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import { Resend } from 'resend';
 
 type FormData = {
   name: string;
@@ -11,12 +12,18 @@ type FormData = {
   message: string;
 };
 
+
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
-    console.log('Form submitted:', data);
+    console.log("Form submitted:", data);
     setIsSubmitted(true);
     reset();
     setTimeout(() => setIsSubmitted(false), 5000);
@@ -32,7 +39,10 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            Get in <span className="bg-gradient-primary bg-clip-text text-transparent">Touch</span>
+            Get in{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Touch
+            </span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -40,7 +50,8 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-400 max-w-3xl mx-auto"
           >
-            Whether you're ready to launch or just curious about pricing — let's chat about your project
+            Whether you're ready to launch or just curious about pricing — let's
+            chat about your project
           </motion.p>
         </div>
       </section>
@@ -55,82 +66,103 @@ export default function Contact() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold mb-6">Send Me a Message</h2>
-              
+
               {isSubmitted && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   className="bg-primary-green/10 border border-primary-green text-primary-green p-4 rounded-lg mb-6"
                 >
-                  <strong>Thanks for reaching out!</strong> I'll reply within 24 hours.
+                  <strong>Thanks for reaching out!</strong> I'll reply within 24
+                  hours.
                 </motion.div>
               )}
 
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Your Name *
                   </label>
                   <input
                     type="text"
                     id="name"
-                    {...register('name', { required: 'Name is required' })}
+                    {...register("name", { required: "Name is required" })}
                     className="w-full px-4 py-3 bg-dark-card border border-dark-border rounded-lg focus:outline-none focus:border-primary-blue transition-colors"
                     placeholder="John Doe"
                   />
                   {errors.name && (
-                    <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>
+                    <p className="text-red-400 text-sm mt-1">
+                      {errors.name.message}
+                    </p>
                   )}
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Email Address *
                   </label>
                   <input
                     type="email"
                     id="email"
-                    {...register('email', {
-                      required: 'Email is required',
+                    {...register("email", {
+                      required: "Email is required",
                       pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: 'Invalid email address',
+                        message: "Invalid email address",
                       },
                     })}
                     className="w-full px-4 py-3 bg-dark-card border border-dark-border rounded-lg focus:outline-none focus:border-primary-blue transition-colors"
                     placeholder="john@example.com"
                   />
                   {errors.email && (
-                    <p className="text-red-400 text-sm mt-1">{errors.email.message}</p>
+                    <p className="text-red-400 text-sm mt-1">
+                      {errors.email.message}
+                    </p>
                   )}
                 </div>
 
                 <div>
-                  <label htmlFor="businessName" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="businessName"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Business Name
                   </label>
                   <input
                     type="text"
                     id="businessName"
-                    {...register('businessName')}
+                    {...register("businessName")}
                     className="w-full px-4 py-3 bg-dark-card border border-dark-border rounded-lg focus:outline-none focus:border-primary-blue transition-colors"
                     placeholder="Your Business Name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Message *
                   </label>
                   <textarea
                     id="message"
                     rows={6}
-                    {...register('message', { required: 'Message is required' })}
+                    {...register("message", {
+                      required: "Message is required",
+                    })}
                     className="w-full px-4 py-3 bg-dark-card border border-dark-border rounded-lg focus:outline-none focus:border-primary-blue transition-colors resize-none"
                     placeholder="Tell me about your project..."
                   />
                   {errors.message && (
-                    <p className="text-red-400 text-sm mt-1">{errors.message.message}</p>
+                    <p className="text-red-400 text-sm mt-1">
+                      {errors.message.message}
+                    </p>
                   )}
                 </div>
 
@@ -153,14 +185,25 @@ export default function Contact() {
                   <div className="card">
                     <div className="flex items-start">
                       <div className="bg-primary-blue/10 p-3 rounded-lg mr-4">
-                        <svg className="w-6 h-6 text-primary-blue" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg
+                          className="w-6 h-6 text-primary-blue"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
                           <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">Email</h3>
-                        <a href="mailto:hello@sfweb.ie" className="text-gray-400 hover:text-primary-blue transition-colors">
-                          hello@sfweb.ie
+                        <a
+                          href="mailto:sean@sfweb.ie"
+                          className="text-gray-400 hover:text-primary-blue transition-colors"
+                        >
+                          sean@sfweb.ie
                         </a>
                       </div>
                     </div>
@@ -169,7 +212,15 @@ export default function Contact() {
                   <div className="card">
                     <div className="flex items-start">
                       <div className="bg-primary-green/10 p-3 rounded-lg mr-4">
-                        <svg className="w-6 h-6 text-primary-green" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg
+                          className="w-6 h-6 text-primary-green"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
                           <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                           <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
@@ -186,15 +237,21 @@ export default function Contact() {
                   <div className="card">
                     <div className="flex items-start">
                       <div className="bg-primary-blue/10 p-3 rounded-lg mr-4">
-                        <svg className="w-6 h-6 text-primary-blue" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg
+                          className="w-6 h-6 text-primary-blue"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
                           <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">Response Time</h3>
-                        <p className="text-gray-400">
-                          Within 24 hours
-                        </p>
+                        <p className="text-gray-400">Within 24 hours</p>
                       </div>
                     </div>
                   </div>
@@ -229,12 +286,13 @@ export default function Contact() {
 
               <div className="card bg-dark-card border border-primary-blue/30">
                 <h3 className="text-xl font-bold mb-3">
-                  <span className="text-primary-blue">🇮🇪</span> Proudly Irish
+                  <span className="text-primary-blue">☘️</span> Proudly Irish
                 </h3>
                 <p className="text-gray-400">
-                  SFWeb is a local Irish business based in Limerick, working with businesses 
-                  throughout Ireland. When you work with me, you're supporting local while 
-                  getting professional web design services.
+                  SFWeb is a local Irish business based in Limerick, working
+                  with businesses throughout Ireland. When you work with me,
+                  you're supporting local while getting professional web design
+                  services.
                 </p>
               </div>
             </motion.div>

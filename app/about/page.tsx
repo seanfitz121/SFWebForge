@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -14,7 +14,10 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            About <span className="bg-gradient-primary bg-clip-text text-transparent">SFWeb</span>
+            About{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              SFWeb
+            </span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -22,7 +25,8 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-400 max-w-3xl mx-auto"
           >
-            Helping Irish businesses grow online with professional, affordable web design from Limerick
+            Helping Irish businesses grow online with professional, affordable
+            web design from Limerick
           </motion.p>
         </div>
       </section>
@@ -41,18 +45,22 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-gray-400 text-lg">
                 <p>
-                  Hi, I'm <strong className="text-white">Sean</strong> — an IT graduate based in Limerick, Ireland. 
-                  I create clean, modern websites for local Irish businesses who want to establish or improve 
+                  Hi, I'm <strong className="text-white">Sean</strong> — I'm
+                  based in Limerick, Ireland. I create clean, modern websites
+                  for local Irish businesses who want to establish or improve
                   their online presence.
                 </p>
                 <p>
-                  After completing my IT studies, I saw how many talented local businesses struggled with 
-                  expensive web design services or complicated DIY website builders. I started SFWeb to offer 
-                  a better solution: professional websites at prices that make sense for Irish small businesses.
+                  Upon working on my own website, I saw how many talented local
+                  businesses struggled with expensive web design services or
+                  complicated DIY website builders. I started SFWeb to offer a
+                  better solution: professional websites at prices that make
+                  sense for Irish small businesses.
                 </p>
                 <p>
-                  Whether you're a café in Limerick, a tradesperson in Cork, or a salon in Galway, you deserve 
-                  a website that represents your business properly without breaking the bank.
+                  Whether you're a café in Limerick, a tradesperson in Cork, or
+                  a salon in Galway, you deserve a website that represents your
+                  business properly without breaking the bank.
                 </p>
               </div>
             </motion.div>
@@ -64,34 +72,46 @@ export default function About() {
               viewport={{ once: true }}
               className="card bg-gradient-to-br from-primary-blue/10 to-dark-card"
             >
-              <h3 className="text-2xl font-bold mb-6 text-center">Why SFWeb?</h3>
+              <h3 className="text-2xl font-bold mb-6 text-center">
+                Why SFWeb?
+              </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <span className="text-3xl mr-4">🎓</span>
                   <div>
-                    <strong className="text-white">Qualified Professional</strong>
-                    <p className="text-gray-400 text-sm">IT graduate with modern web development expertise</p>
+                    <strong className="text-white">
+                      Qualified Professional
+                    </strong>
+                    <p className="text-gray-400 text-sm">
+                      IT graduate with modern web development expertise
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-3xl mr-4">🇮🇪</span>
+                  <span className="text-3xl mr-4">☘️</span>
                   <div>
                     <strong className="text-white">Local Irish Service</strong>
-                    <p className="text-gray-400 text-sm">Based in Limerick, working with businesses across Ireland</p>
+                    <p className="text-gray-400 text-sm">
+                      Based in Limerick, working with businesses across Ireland
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="text-3xl mr-4">💰</span>
                   <div>
                     <strong className="text-white">Affordable Pricing</strong>
-                    <p className="text-gray-400 text-sm">Quality websites that won't empty your business account</p>
+                    <p className="text-gray-400 text-sm">
+                      Quality websites that won't empty your business account
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <span className="text-3xl mr-4">🤝</span>
                   <div>
                     <strong className="text-white">Personal Touch</strong>
-                    <p className="text-gray-400 text-sm">Direct communication with me, not a faceless agency</p>
+                    <p className="text-gray-400 text-sm">
+                      Direct communication with me, not a faceless agency
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -109,9 +129,12 @@ export default function About() {
               My <span className="text-primary-blue">Mission</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              <strong className="text-white">Helping Irish businesses grow online without breaking the bank.</strong> 
-              Every business deserves a professional website that attracts customers and builds trust. 
-              I'm here to make that happen at prices that local businesses can actually afford.
+              <strong className="text-white">
+                Helping Irish businesses grow online without breaking the bank.
+              </strong>
+              Every business deserves a professional website that attracts
+              customers and builds trust. I'm here to make that happen at prices
+              that local businesses can actually afford.
             </p>
           </motion.div>
 
@@ -131,8 +154,9 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Chat</h3>
                 <p className="text-gray-400">
-                  We discuss your business, goals, and what you need from your website. 
-                  I'll recommend the best solution for your budget and timeline.
+                  We discuss your business, goals, and what you need from your
+                  website. I'll recommend the best solution for your budget and
+                  timeline.
                 </p>
               </div>
 
@@ -142,7 +166,7 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Design</h3>
                 <p className="text-gray-400">
-                  I create your website with regular updates and feedback loops. 
+                  I create your website with regular updates and feedback loops.
                   You'll see the progress and have input throughout the process.
                 </p>
               </div>
@@ -153,8 +177,9 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Launch</h3>
                 <p className="text-gray-400">
-                  Once you're happy, we launch your site. I'll help with deployment, 
-                  domain setup, and make sure everything runs smoothly.
+                  Once you're happy, we launch your site. I'll help with
+                  deployment, domain setup, and make sure everything runs
+                  smoothly.
                 </p>
               </div>
             </div>
@@ -172,12 +197,14 @@ export default function About() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              <span className="text-primary-green">Limerick</span> Based, Ireland Focused
+              <span className="text-primary-green">Limerick</span> Based,
+              Ireland Focused
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              SFWeb is proudly based in Limerick, serving businesses throughout Ireland. 
-              I understand the local market and what Irish customers expect. When you work with me, 
-              you're supporting local Irish business while getting professional web design services.
+              SFWeb is proudly based in Limerick, serving businesses throughout
+              Ireland. I understand the local market and what Irish customers
+              expect. When you work with me, you're supporting local Irish
+              business while getting professional web design services.
             </p>
           </motion.div>
 
@@ -191,7 +218,9 @@ export default function About() {
             >
               <div className="text-4xl mb-3">📍</div>
               <h3 className="text-xl font-semibold mb-2">Limerick Based</h3>
-              <p className="text-gray-400">Operating from the heart of Limerick</p>
+              <p className="text-gray-400">
+                Operating from the heart of Limerick
+              </p>
             </motion.div>
 
             <motion.div
@@ -201,9 +230,11 @@ export default function About() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-4xl mb-3">🇮🇪</div>
+              <div className="text-4xl mb-3">☘️</div>
               <h3 className="text-xl font-semibold mb-2">Ireland-Wide</h3>
-              <p className="text-gray-400">Working with businesses across Ireland</p>
+              <p className="text-gray-400">
+                Working with businesses across Ireland
+              </p>
             </motion.div>
 
             <motion.div
@@ -233,7 +264,8 @@ export default function About() {
               Let's Work Together
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              Whether you're ready to launch or just curious about pricing — let's chat about your project
+              Whether you're ready to launch or just curious about pricing —
+              let's chat about your project
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary text-lg">
