@@ -1,60 +1,121 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  * {
-    @apply box-border;
-  }
-  
-  html {
-    @apply scroll-smooth;
-  }
-  
-  body {
-    @apply bg-dark-bg text-gray-100 antialiased;
-  }
+@theme {
+  --color-primary-blue: #3B82F6;
+  --color-primary-green: #10B981;
+  --color-primary-blue-dark: #1E40AF;
+  --color-primary-green-dark: #059669;
+  --color-dark-bg: #0A0E1A;
+  --color-dark-card: #111827;
+  --color-dark-border: #1F2937;
+}
 
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  ::-webkit-scrollbar-track {
-    @apply bg-dark-bg;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
-    @apply rounded-full;
-  }
+body {
+  background-color: var(--color-dark-bg);
+  color: rgb(243 244 246);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #1E40AF 0%, #059669 100%);
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1E40AF 0%, #059669 100%);
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 15px -3px rgb(59 130 246 / 0.5);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--color-primary-blue);
+  color: var(--color-primary-blue);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+.card {
+  background-color: var(--color-dark-card);
+  border: 1px solid var(--color-dark-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  border-color: rgb(59 130 246 / 0.5);
+}
+
+.section-padding {
+  padding: 5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
-@layer components {
-  .btn-primary {
-    @apply px-6 py-3 bg-gradient-primary text-white font-semibold rounded-lg 
-           hover:shadow-lg hover:shadow-primary-blue/50 transition-all duration-300 
-           transform hover:scale-105;
-  }
-  
-  .btn-secondary {
-    @apply px-6 py-3 border-2 border-primary-blue text-primary-blue font-semibold 
-           rounded-lg hover:bg-primary-blue hover:text-white transition-all duration-300;
-  }
-  
-  .card {
-    @apply bg-dark-card border border-dark-border rounded-xl p-6 
-           hover:border-primary-blue/50 transition-all duration-300;
-  }
-  
+@media (min-width: 1024px) {
   .section-padding {
-    @apply py-20 px-4 sm:px-6 lg:px-8;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
-  
-  .container-custom {
-    @apply max-w-7xl mx-auto;
-  }
+}
+
+.container-custom {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-gradient-primary {
+  background-image: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-transparent {
+  color: transparent;
 }
