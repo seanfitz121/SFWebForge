@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import Link from "next/link";
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Services() {
   return (
@@ -14,10 +14,7 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            What{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              We Offer
-            </span>
+            What <span className="bg-gradient-primary bg-clip-text text-transparent">We Offer</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -25,8 +22,7 @@ export default function Services() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-400 max-w-3xl mx-auto"
           >
-            Professional web design services tailored to Irish businesses, from
-            quick template setups to fully custom solutions
+            Professional web design services tailored to Irish businesses, from quick template setups to fully custom solutions
           </motion.p>
         </div>
       </section>
@@ -46,47 +42,36 @@ export default function Services() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="text-gray-400 text-lg mb-6">
-                  Get online quickly with our professionally designed templates.
-                  Perfect for cafés, tradespeople, gyms, salons, and more. Each
-                  template is modern, mobile-responsive, and ready to showcase
-                  your business.
+                  Get online quickly with our professionally designed templates. Perfect for cafés, 
+                  tradespeople, gyms, salons, and more. Each template is modern, mobile-responsive, 
+                  and ready to showcase your business.
                 </p>
                 <div className="bg-dark-card p-6 rounded-lg border border-dark-border mb-6">
                   <h3 className="text-xl font-semibold mb-4">How It Works:</h3>
                   <ol className="space-y-3">
                     <li className="flex items-start">
-                      <span className="bg-primary-green text-dark-bg font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                        1
-                      </span>
+                      <span className="bg-primary-green text-dark-bg font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">1</span>
                       <span>Choose a template that fits your business</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="bg-primary-green text-dark-bg font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                        2
-                      </span>
+                      <span className="bg-primary-green text-dark-bg font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">2</span>
                       <span>Provide your content, images, and branding</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="bg-primary-green text-dark-bg font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                        3
-                      </span>
-                      <span>
-                        SFWeb sets everything up and deploys your site
-                      </span>
+                      <span className="bg-primary-green text-dark-bg font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">3</span>
+                      <span>SFWeb sets everything up and deploys your site</span>
                     </li>
                   </ol>
                 </div>
                 <div className="card">
                   <div className="flex justify-between items-center mb-4">
                     <h3 className="text-2xl font-bold">Template Setup</h3>
-                    <div className="text-2xl font-bold text-primary-green">
-                      €150-€200
-                    </div>
+                    <div className="text-2xl font-bold text-primary-green">€150-€200</div>
                   </div>
                   <ul className="space-y-2 text-gray-400 mb-4">
                     <li className="flex items-start">
                       <span className="text-primary-green mr-2">✓</span>
-                      <span>3-page professional website</span>
+                      <span>5-page professional website</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary-green mr-2">✓</span>
@@ -106,8 +91,7 @@ export default function Services() {
                     </li>
                   </ul>
                   <p className="text-sm text-gray-500">
-                    Note: Templates can be upgraded to custom designs as your
-                    business grows
+                    Note: Templates can be upgraded to custom designs as your business grows
                   </p>
                 </div>
               </div>
@@ -120,16 +104,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-center">
                     <span className="text-2xl mr-3">🔧</span>
-                    <span>
-                      Tradespeople & Contractors -{" "}
-                      <a
-                        href="https://swiftplumbing.replit.app"
-                        className="text-primary-green underline"
-                        target="_blank"
-                      >
-                        See a sample template!
-                      </a>
-                    </span>
+                    <span>Tradespeople & Contractors</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-2xl mr-3">💪</span>
@@ -145,16 +120,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-center">
                     <span className="text-2xl mr-3">📚</span>
-                    <span>
-                      Professional Services -{" "}
-                      <a
-                        href="https://mobile-valet-demo-t93i.vercel.app/"
-                        className="text-primary-green underline"
-                        target="_blank"
-                      >
-                        See a sample template!
-                      </a>
-                    </span>
+                    <span>Professional Services</span>
                   </li>
                 </ul>
               </div>
@@ -173,9 +139,7 @@ export default function Services() {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="card bg-gradient-to-br from-primary-blue/10 to-dark-card">
-                <h3 className="text-2xl font-semibold mb-4">
-                  Bespoke Design Features:
-                </h3>
+                <h3 className="text-2xl font-semibold mb-4">Bespoke Design Features:</h3>
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex items-start">
                     <span className="text-primary-blue mr-2">✓</span>
@@ -205,41 +169,29 @@ export default function Services() {
               </div>
               <div>
                 <p className="text-gray-400 text-lg mb-6">
-                  Stand out from the competition with a fully custom website
-                  designed specifically for your brand. Perfect for businesses
-                  that need unique functionality or want complete control over
-                  their online presence.
+                  Stand out from the competition with a fully custom website designed specifically 
+                  for your brand. Perfect for businesses that need unique functionality or want 
+                  complete control over their online presence.
                 </p>
                 <div className="bg-dark-card p-6 rounded-lg border border-dark-border mb-6">
-                  <h3 className="text-xl font-semibold mb-4">
-                    3-Step Process:
-                  </h3>
+                  <h3 className="text-xl font-semibold mb-4">3-Step Process:</h3>
                   <ol className="space-y-3">
                     <li className="flex items-start">
-                      <span className="bg-primary-blue text-white font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                        1
-                      </span>
+                      <span className="bg-primary-blue text-white font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">1</span>
                       <div>
-                        <strong>Chat:</strong> We discuss your vision, goals,
-                        and requirements
+                        <strong>Chat:</strong> We discuss your vision, goals, and requirements
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <span className="bg-primary-blue text-white font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                        2
-                      </span>
+                      <span className="bg-primary-blue text-white font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">2</span>
                       <div>
-                        <strong>Build:</strong> I create your site with regular
-                        feedback loops
+                        <strong>Build:</strong> I create your site with regular feedback loops
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <span className="bg-primary-blue text-white font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                        3
-                      </span>
+                      <span className="bg-primary-blue text-white font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">3</span>
                       <div>
-                        <strong>Launch:</strong> We deploy your site and ensure
-                        everything works perfectly
+                        <strong>Launch:</strong> We deploy your site and ensure everything works perfectly
                       </div>
                     </li>
                   </ol>
@@ -247,9 +199,7 @@ export default function Services() {
                 <div className="card border-2 border-primary-blue">
                   <div className="flex justify-between items-center mb-4">
                     <h3 className="text-2xl font-bold">Custom Website</h3>
-                    <div className="text-2xl font-bold text-primary-blue">
-                      €300+
-                    </div>
+                    <div className="text-2xl font-bold text-primary-blue">€300+</div>
                   </div>
                   <p className="text-sm text-primary-blue font-semibold mb-4">
                     Introductory rate - price will increase as portfolio grows
@@ -292,12 +242,9 @@ export default function Services() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="card">
-                <h3 className="text-xl font-semibold mb-4">
-                  Optional Maintenance
-                </h3>
+                <h3 className="text-xl font-semibold mb-4">Optional Maintenance</h3>
                 <p className="text-gray-400 mb-4">
-                  Keep your website up-to-date with regular updates, security
-                  patches, and content changes.
+                  Keep your website up-to-date with regular updates, security patches, and content changes.
                 </p>
                 <ul className="space-y-2 text-gray-400">
                   <li className="flex items-start">
@@ -319,12 +266,9 @@ export default function Services() {
                 </ul>
               </div>
               <div className="card">
-                <h3 className="text-xl font-semibold mb-4">
-                  Domain & Hosting Help
-                </h3>
+                <h3 className="text-xl font-semibold mb-4">Domain & Hosting Help</h3>
                 <p className="text-gray-400 mb-4">
-                  Need help with domain registration or hosting setup? We'll
-                  guide you through the entire process.
+                  Need help with domain registration or hosting setup? We'll guide you through the entire process.
                 </p>
                 <ul className="space-y-2 text-gray-400">
                   <li className="flex items-start">

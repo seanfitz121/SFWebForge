@@ -58,7 +58,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
           >
-            Affordable, fast, and locally built in Ireland
+            Affordable, fast, and locally built in Limerick
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -123,7 +123,7 @@ export default function Home() {
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <span className="text-primary-green mr-2">✓</span>
-                  <span>3-page professional website</span>
+                  <span>5-page professional website</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-green mr-2">✓</span>
