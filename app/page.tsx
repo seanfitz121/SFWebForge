@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -40,35 +41,54 @@ export default function Home() {
   return (
     <div>
       <section className="section-padding bg-gradient-to-b from-dark-bg to-dark-card">
-        <div className="container-custom text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-5xl md:text-6xl font-bold mb-6"
-          >
-            Modern Websites for{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Local Irish Businesses
-            </span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
-          >
-            Affordable, fast, and locally built in Limerick
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <Link href="/contact" className="btn-primary text-lg">
-              Get a Quote
-            </Link>
-          </motion.div>
+        <div className="container-custom">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-5xl md:text-6xl font-bold mb-6"
+              >
+                Modern Websites for{" "}
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  Local Irish Businesses
+                </span>
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-xl text-gray-400 mb-8"
+              >
+                Affordable, fast, and locally built in Limerick
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                <Link href="/contact" className="btn-primary text-lg">
+                  Get a Quote
+                </Link>
+              </motion.div>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="relative rounded-lg overflow-hidden shadow-2xl"
+            >
+              <Image
+                src="/attached_assets/stock_images/modern_laptop_worksp_b34e26f6.jpg"
+                alt="Modern workspace with laptop showing web design"
+                width={800}
+                height={600}
+                className="w-full h-auto"
+                priority
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 
