@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -106,23 +107,33 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-              <div className="card bg-gradient-to-br from-primary-green/10 to-dark-card">
-                <h3 className="text-2xl font-semibold mb-4">Perfect For:</h3>
-                <ul className="space-y-3 text-gray-300">
-                  <li className="flex items-center">
-                    <span className="text-2xl mr-3">☕</span>
-                    <span>Cafés & Restaurants</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-2xl mr-3">🔧</span>
-                    <span>
-                      Tradespeople & Contractors -{" "}
-                      <a
-                        href="https://swiftplumbing.replit.app/services"
-                        className="underline text-green-300"
-                      >
-                        See demo!
-                      </a>
+              <div className="space-y-6">
+                <div className="relative rounded-lg overflow-hidden shadow-xl">
+                  <Image
+                    src="/attached_assets/stock_images/web_development_webs_02c2695b.jpg"
+                    alt="Web development workspace"
+                    width={600}
+                    height={450}
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="card bg-gradient-to-br from-primary-green/10 to-dark-card">
+                  <h3 className="text-2xl font-semibold mb-4">Perfect For:</h3>
+                  <ul className="space-y-3 text-gray-300">
+                    <li className="flex items-center">
+                      <span className="text-2xl mr-3">☕</span>
+                      <span>Cafés & Restaurants</span>
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-2xl mr-3">🔧</span>
+                      <span>
+                        Tradespeople & Contractors -{" "}
+                        <a
+                          href="https://swiftplumbing.replit.app/services"
+                          className="underline text-green-300"
+                        >
+                          See demo!
+                        </a>
                     </span>
                   </li>
                   <li className="flex items-center">
@@ -150,6 +161,7 @@ export default function Services() {
                     </span>
                   </li>
                 </ul>
+                </div>
               </div>
             </div>
           </motion.div>
