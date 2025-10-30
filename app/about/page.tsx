@@ -75,7 +75,7 @@ export default function About() {
             >
               <div className="relative rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/attached_assets/stock_images/modern_laptop_worksp_050f9f7e.jpg"
+                  src="/images/modern_laptop_worksp_050f9f7e.jpg"
                   alt="Professional workspace"
                   width={700}
                   height={500}

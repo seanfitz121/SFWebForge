@@ -110,7 +110,7 @@ export default function Services() {
               <div className="space-y-6">
                 <div className="relative rounded-lg overflow-hidden shadow-xl">
                   <Image
-                    src="/attached_assets/stock_images/web_development_webs_02c2695b.jpg"
+                    src="/images/web_development_webs_02c2695b.jpg"
                     alt="Web development workspace"
                     width={600}
                     height={450}

@@ -80,7 +80,7 @@ export default function Home() {
               className="relative rounded-lg overflow-hidden shadow-2xl"
             >
               <Image
-                src="/attached_assets/stock_images/modern_laptop_worksp_b34e26f6.jpg"
+                src="/images/modern_laptop_worksp_b34e26f6.jpg"
                 alt="Modern workspace with laptop showing web design"
                 width={800}
                 height={600}
