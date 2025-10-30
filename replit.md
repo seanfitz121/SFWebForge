@@ -11,6 +11,7 @@ SFWeb is a professional, production-ready 5-page Next.js website for a Limerick-
 - **Dark theme**: Professional dark background with blue/green accent colors
 - **Custom scrollbar**: Blue/green gradient with rounded corners
 - **Fully responsive**: Optimized for desktop, tablet, and mobile with enhanced mobile navigation
+- **Professional imagery**: Stock images on homepage, services, and about pages to break up text
 - **SEO-optimized**: Meta tags, Open Graph URLs, JSON-LD structured data, sitemap, robots.txt
 - **Modern animations**: Framer Motion for smooth transitions, mobile menu animations, hover effects
 - **Contact form**: Validated form with Resend email integration (sends to sean@sfweb.ie)
@@ -44,6 +45,7 @@ SFWeb is a professional, production-ready 5-page Next.js website for a Limerick-
 │   ├── Footer.tsx          # Footer with links and branding
 │   └── StructuredData.tsx  # JSON-LD structured data for SEO
 ├── public/
+│   ├── images/             # Stock images for visual content
 │   └── robots.txt          # SEO robots file
 └── package.json
 ```
@@ -59,6 +61,10 @@ SFWeb is a professional, production-ready 5-page Next.js website for a Limerick-
 - ✅ Updated JSON-LD structured data to remove price specifications
 - ✅ Changed "Affordable Pricing" to "Great Value" in About page
 - ✅ Updated Contact and About page CTAs to remove pricing references
+- ✅ Added professional stock images to homepage, services, and about pages
+- ✅ Homepage: Two-column hero layout with workspace image
+- ✅ Services: Image breaking up template setup section
+- ✅ About: Professional workspace image for personality
 
 ### October 15, 2025
 - ✅ Initial project setup with Next.js, TypeScript, and Tailwind CSS v4
