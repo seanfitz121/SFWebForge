@@ -1,7 +1,7 @@
 # SFWeb - Professional Web Design Service
 
 ## Overview
-SFWeb is a professional, production-ready 5-page Next.js website for a Limerick-based Irish web design service. The site offers affordable websites to local businesses with two main service tiers: Template Setup (€150-€200) and Custom Websites (€300+).
+SFWeb is a professional, production-ready 5-page Next.js website for a Limerick-based Irish web design service. The site showcases two main service tiers: Template Setup (3-page professional websites) and Custom Websites (bespoke designs). All pricing information has been removed from public-facing content.
 
 ## Project Status
 ✅ Fully functional MVP completed on October 15, 2025
@@ -48,7 +48,19 @@ SFWeb is a professional, production-ready 5-page Next.js website for a Limerick-
 └── package.json
 ```
 
-## Recent Changes (October 15, 2025)
+## Recent Changes
+
+### October 30, 2025
+- ✅ Removed all pricing information site-wide (€150-€200, €300+, maintenance plans)
+- ✅ Changed all "5-page professional website" references to "3-page professional website"
+- ✅ Removed "IT graduate" and occupation references from About page and metadata
+- ✅ Updated Pricing page title to "Our Service Packages"
+- ✅ Updated all metadata descriptions across layout files to remove pricing
+- ✅ Updated JSON-LD structured data to remove price specifications
+- ✅ Changed "Affordable Pricing" to "Great Value" in About page
+- ✅ Updated Contact and About page CTAs to remove pricing references
+
+### October 15, 2025
 - ✅ Initial project setup with Next.js, TypeScript, and Tailwind CSS v4
 - ✅ Configured Tailwind v4 with custom theme using @theme directive
 - ✅ Created all 5 pages with complete content
@@ -114,7 +126,9 @@ npm start      # Run production build
 - ✅ Mobile-friendly design
 
 ## Notes
-- Contact form currently shows client-side confirmation
-- Ready for email integration in next phase
+- All pricing information removed from public-facing pages per user request
+- Service offerings described as "3-page professional websites" (Template Setup) and "bespoke designs" (Custom Websites)
+- Contact form fully functional with Resend integration sending to sean@sfweb.ie
 - All content is production-ready
 - Limerick, Ireland location emphasized throughout
+- No occupation or credential references displayed publicly
