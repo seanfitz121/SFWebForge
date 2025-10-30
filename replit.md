@@ -110,8 +110,19 @@ npm run build  # Build for production
 npm start      # Run production build
 ```
 
+## Deployment Notes
+
+### Environment Variables Required
+For both Replit and Vercel deployments, set these environment variables:
+- `RESEND_API_KEY` - Your Resend API key (get from resend.com)
+- `RESEND_FROM_EMAIL` - Verified sender email address (e.g., hello@sfweb.ie)
+
+### Vercel Deployment
+1. Add the environment variables in Vercel project settings
+2. Redeploy after adding variables
+3. Contact form will send emails to sean@sfweb.ie
+
 ## Future Enhancements (Phase 2)
-- Email integration for contact form (SendGrid or Resend)
 - Portfolio/Past Clients page
 - Testimonials section
 - Google Analytics integration
