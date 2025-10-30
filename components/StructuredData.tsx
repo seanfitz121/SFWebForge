@@ -25,7 +25,7 @@ export default function StructuredData() {
     '@id': 'https://sfweb.ie',
     name: 'SFWeb',
     image: 'https://sfweb.ie/logo.png',
-    description: 'Affordable web design and development services for Irish businesses based in Limerick',
+    description: 'Professional web design and development services for Irish businesses based in Limerick',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Limerick',
@@ -38,7 +38,6 @@ export default function StructuredData() {
     },
     url: 'https://sfweb.ie',
     email: 'hello@sfweb.ie',
-    priceRange: '€150-€500',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -68,13 +67,7 @@ export default function StructuredData() {
           itemOffered: {
             '@type': 'Service',
             name: 'Template Website Setup',
-            description: '5-page professional website using pre-designed templates',
-          },
-          priceSpecification: {
-            '@type': 'PriceSpecification',
-            minPrice: 150,
-            maxPrice: 200,
-            priceCurrency: 'EUR',
+            description: '3-page professional website using pre-designed templates',
           },
         },
         {
@@ -84,8 +77,6 @@ export default function StructuredData() {
             name: 'Custom Website Design',
             description: 'Fully bespoke website tailored to your brand',
           },
-          price: 300,
-          priceCurrency: 'EUR',
         },
       ],
     },

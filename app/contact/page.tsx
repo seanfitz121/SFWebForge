@@ -76,7 +76,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-400 max-w-3xl mx-auto"
           >
-            Whether you're ready to launch or just curious about pricing — let's
+            Whether you're ready to launch or just exploring options — let's
             chat about your project
           </motion.p>
         </div>
@@ -319,7 +319,7 @@ export default function Contact() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-green mr-2">✓</span>
-                    <span>Transparent pricing and timelines</span>
+                    <span>Clear timelines and expectations</span>
                   </li>
                 </ul>
               </div>

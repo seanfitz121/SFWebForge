@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | SFWeb",
   },
   description:
-    "Affordable, fast, and locally built web design services in Limerick, Ireland. Professional websites for Irish businesses starting at €150.",
+    "Professional, fast, and locally built web design services in Limerick, Ireland. Modern websites for Irish businesses.",
   keywords: [
     "web design",
     "Limerick",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     siteName: "SFWeb",
     title: "SFWeb - Modern Websites for Local Irish Businesses",
     description:
-      "Affordable, fast, and locally built web design services in Limerick, Ireland.",
+      "Professional, fast, and locally built web design services in Limerick, Ireland.",
   },
   twitter: {
     card: "summary_large_image",
     title: "SFWeb - Modern Websites for Local Irish Businesses",
     description:
-      "Affordable, fast, and locally built web design services in Limerick, Ireland.",
+      "Professional, fast, and locally built web design services in Limerick, Ireland.",
   },
 };
 

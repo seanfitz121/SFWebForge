@@ -14,7 +14,7 @@ export default function Pricing() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            Simple, <span className="bg-gradient-primary bg-clip-text text-transparent">Transparent Pricing</span>
+            Our <span className="bg-gradient-primary bg-clip-text text-transparent">Service Packages</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ export default function Pricing() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-400 max-w-3xl mx-auto"
           >
-            No hidden fees, no surprises. Choose the package that fits your business needs and budget.
+            Choose the package that fits your business needs. Contact us for a personalized quote.
           </motion.p>
         </div>
       </section>
@@ -41,9 +41,7 @@ export default function Pricing() {
                 <div className="inline-block bg-primary-green/10 text-primary-green px-4 py-2 rounded-full text-sm font-semibold mb-4">
                   BEST FOR GETTING STARTED
                 </div>
-                <h2 className="text-3xl font-bold mb-2">Template Setup</h2>
-                <div className="text-5xl font-bold text-primary-green mb-2">€150-€200</div>
-                <p className="text-gray-400">One-time payment</p>
+                <h2 className="text-3xl font-bold mb-4">Template Setup</h2>
               </div>
               
               <div className="border-t border-dark-border pt-6 mb-6">
@@ -53,7 +51,7 @@ export default function Pricing() {
                     <svg className="w-5 h-5 text-primary-green mr-3 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                       <path d="M5 13l4 4L19 7"></path>
                     </svg>
-                    <span>5-page professional website</span>
+                    <span>3-page professional website</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-primary-green mr-3 flex-shrink-0 mt-0.5" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -125,12 +123,7 @@ export default function Pricing() {
                 <div className="inline-block bg-primary-blue/10 text-primary-blue px-4 py-2 rounded-full text-sm font-semibold mb-4">
                   BEST VALUE
                 </div>
-                <h2 className="text-3xl font-bold mb-2">Custom Website</h2>
-                <div className="text-5xl font-bold text-primary-blue mb-2">€300+</div>
-                <p className="text-gray-400">One-time payment</p>
-                <p className="text-sm text-primary-blue font-semibold mt-2">
-                  Introductory rate - will increase
-                </p>
+                <h2 className="text-3xl font-bold mb-4">Custom Website</h2>
               </div>
               
               <div className="border-t border-dark-border pt-6 mb-6">
@@ -209,29 +202,23 @@ export default function Pricing() {
             <div className="card bg-gradient-to-br from-dark-card to-dark-bg">
               <div className="text-center mb-6">
                 <h2 className="text-2xl font-bold mb-2">Optional Maintenance Plan</h2>
-                <p className="text-gray-400">Coming soon - keep your site updated and secure</p>
+                <p className="text-gray-400">Keep your site updated and secure</p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-primary-green mb-2">From €25</div>
-                  <p className="text-sm text-gray-400">per month</p>
-                </div>
-                <div className="md:col-span-2">
-                  <ul className="text-left space-y-2 text-gray-400">
-                    <li className="flex items-start">
-                      <span className="text-primary-green mr-2">✓</span>
-                      <span>Regular security updates and backups</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary-green mr-2">✓</span>
-                      <span>Content updates and changes</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary-green mr-2">✓</span>
-                      <span>Priority support via email</span>
-                    </li>
-                  </ul>
-                </div>
+              <div className="grid grid-cols-1 gap-6">
+                <ul className="space-y-2 text-gray-400">
+                  <li className="flex items-start">
+                    <span className="text-primary-green mr-2">✓</span>
+                    <span>Regular security updates and backups</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-green mr-2">✓</span>
+                    <span>Content updates and changes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary-green mr-2">✓</span>
+                    <span>Priority support via email</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </motion.div>
@@ -288,7 +275,7 @@ export default function Pricing() {
             >
               <h3 className="text-lg font-semibold mb-2">Do I need to pay for hosting separately?</h3>
               <p className="text-gray-400">
-                Yes, hosting is separate. I'll help you choose affordable hosting options and assist with setup. Many quality hosts start from €5-10 per month.
+                Yes, hosting is separate. I'll help you choose affordable hosting options and assist with setup.
               </p>
             </motion.div>
 

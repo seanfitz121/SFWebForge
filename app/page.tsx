@@ -116,14 +116,13 @@ export default function Home() {
               <div className="text-primary-green text-xl font-bold mb-2">
                 Template Setup
               </div>
-              <div className="text-4xl font-bold mb-4">€150-€200</div>
-              <p className="text-gray-400 mb-6">
+              <p className="text-gray-400 mb-6 mt-4">
                 Perfect for getting online quickly with professional templates
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <span className="text-primary-green mr-2">✓</span>
-                  <span>5-page professional website</span>
+                  <span>3-page professional website</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-green mr-2">✓</span>
@@ -160,8 +159,7 @@ export default function Home() {
               <div className="text-primary-blue text-xl font-bold mb-2">
                 Custom Website
               </div>
-              <div className="text-4xl font-bold mb-4">€300+</div>
-              <p className="text-gray-400 mb-6">
+              <p className="text-gray-400 mb-6 mt-4">
                 Fully bespoke design tailored to your unique brand, more
                 customisation
               </p>

@@ -54,7 +54,7 @@ export default function About() {
                   Upon working on my own website, I saw how many talented local
                   businesses struggled with expensive web design services or
                   complicated DIY website builders. I started SFWeb to offer a
-                  better solution: professional websites at prices that make
+                  better solution: professional websites that make
                   sense for Irish small businesses.
                 </p>
                 <p>
@@ -83,7 +83,7 @@ export default function About() {
                       Qualified Professional
                     </strong>
                     <p className="text-gray-400 text-sm">
-                      IT graduate with modern web development expertise
+                      Professional web development expertise
                     </p>
                   </div>
                 </li>
@@ -99,9 +99,9 @@ export default function About() {
                 <li className="flex items-start">
                   <span className="text-3xl mr-4">💰</span>
                   <div>
-                    <strong className="text-white">Affordable Pricing</strong>
+                    <strong className="text-white">Great Value</strong>
                     <p className="text-gray-400 text-sm">
-                      Quality websites that won't empty your business account
+                      Quality websites that deliver results for your business
                     </p>
                   </div>
                 </li>
@@ -130,11 +130,11 @@ export default function About() {
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
               <strong className="text-white">
-                Helping Irish businesses grow online without breaking the bank.
+                Helping Irish businesses grow online with professional websites.
               </strong>
               Every business deserves a professional website that attracts
-              customers and builds trust. I'm here to make that happen at prices
-              that local businesses can actually afford.
+              customers and builds trust. I'm here to make that happen for
+              local businesses across Ireland.
             </p>
           </motion.div>
 
@@ -264,15 +264,15 @@ export default function About() {
               Let's Work Together
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              Whether you're ready to launch or just curious about pricing —
+              Whether you're ready to launch or just exploring options —
               let's chat about your project
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary text-lg">
                 Get in Touch
               </Link>
-              <Link href="/pricing" className="btn-secondary text-lg">
-                View Pricing
+              <Link href="/services" className="btn-secondary text-lg">
+                View Services
               </Link>
             </div>
           </motion.div>
