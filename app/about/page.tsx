@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -70,11 +71,21 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="card bg-gradient-to-br from-primary-blue/10 to-dark-card"
+              className="space-y-6"
             >
-              <h3 className="text-2xl font-bold mb-6 text-center">
-                Why SFWeb?
-              </h3>
+              <div className="relative rounded-lg overflow-hidden shadow-xl">
+                <Image
+                  src="/attached_assets/stock_images/modern_laptop_worksp_050f9f7e.jpg"
+                  alt="Professional workspace"
+                  width={700}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="card bg-gradient-to-br from-primary-blue/10 to-dark-card">
+                <h3 className="text-2xl font-bold mb-6 text-center">
+                  Why SFWeb?
+                </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <span className="text-3xl mr-4">🎓</span>
@@ -115,6 +126,7 @@ export default function About() {
                   </div>
                 </li>
               </ul>
+              </div>
             </motion.div>
           </div>
 
