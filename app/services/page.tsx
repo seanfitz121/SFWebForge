@@ -129,38 +129,40 @@ export default function Services() {
                       <span>
                         Tradespeople & Contractors -{" "}
                         <a
-                          href="https://swiftplumbing.replit.app/services"
+                          href="https://swiftplumbing.replit.app/"
                           className="underline text-green-300"
+                          target="_blank"
                         >
                           See demo!
                         </a>
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-2xl mr-3">💪</span>
-                    <span>Gyms & Fitness Studios</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-2xl mr-3">✂️</span>
-                    <span>Salons & Beauty Services</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-2xl mr-3">🏪</span>
-                    <span>Retail & Local Shops</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-2xl mr-3">📚</span>
-                    <span>
-                      Professional Services -{" "}
-                      <a
-                        href="https://mobile-valet-demo-t93i.vercel.app/"
-                        className="underline text-green-300"
-                      >
-                        See demo!
-                      </a>
-                    </span>
-                  </li>
-                </ul>
+                      </span>
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-2xl mr-3">💪</span>
+                      <span>Gyms & Fitness Studios</span>
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-2xl mr-3">✂️</span>
+                      <span>Salons & Beauty Services</span>
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-2xl mr-3">🏪</span>
+                      <span>Retail & Local Shops</span>
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-2xl mr-3">📚</span>
+                      <span>
+                        Professional Services -{" "}
+                        <a
+                          href="https://mobile-valet-demo-t93i.vercel.app/"
+                          className="underline text-green-300"
+                          target="_blank"
+                        >
+                          See demo!
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
