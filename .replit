@@ -46,10 +46,6 @@ externalPort = 3001
 localPort = 45607
 externalPort = 3002
 
-[[ports]]
-localPort = 46103
-externalPort = 3003
-
 [deployment]
 build = ["sh", "-c", "npm run build"]
 run = ["sh", "-c", "npm run start"]
